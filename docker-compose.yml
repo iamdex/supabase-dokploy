@@ -66,7 +66,7 @@ services:
       - ./volumes/functions:/app/edge-functions:ro,z
 
   kong:
-    container_name: supabase-kong
+    # container_name: supabase-kong
     image: kong/kong:3.9.1
     restart: unless-stopped
     networks:
